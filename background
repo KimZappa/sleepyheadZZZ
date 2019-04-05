@@ -1,0 +1,47 @@
+import pygame
+pygame.init()
+
+size = (1200, 650)
+screen = pygame.display.set_mode(size)
+background = [210, 180, 140]
+screen.fill(background)
+pygame.display.set_caption("Game Background")
+pygame.display.flip()
+
+desk = (124, 74, 59)
+
+#sprites
+x = 1200
+y = 650
+display = pygame.display.set_mode((x, y))
+sleepy_guy = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\sleepdude.jpg')
+sleepy_girl = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\sleepgirl.jpg')
+
+run = True
+while run:
+    pygame.time.delay(100)
+    # sleepy sprites
+    display.blit(sleepy_girl,(200, 200))
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+
+    screen.fill(background)
+
+    #game layout
+    pygame.draw.rect(screen, desk, (100, 25, 200, 50))
+    pygame.draw.rect(screen, desk, (100, 50, 50, 175))
+
+    pygame.draw.rect(screen, desk, (900, 75, 215, 215))
+
+    pygame.draw.rect(screen, desk, (225, 350, 400, 80))
+
+    pygame.draw.rect(screen, desk, (725, 575, 200, 50))
+    pygame.draw.rect(screen, desk, (800, 450, 50, 175))
+
+    # displaying
+    pygame.display.flip()
+    pygame.display.update()
+
+pygame.quit()

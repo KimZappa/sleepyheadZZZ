@@ -1,0 +1,49 @@
+import pygame
+pygame.init()
+
+size = (1200, 650)
+screen = pygame.display.set_mode(size)
+background = [210, 180, 140]
+screen.fill(background)
+pygame.display.set_caption("Game Background")
+pygame.display.flip()
+
+desk = (124, 74, 59)
+
+#sprites
+sleepy_guy = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\sleepdude.png')
+sleepy = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\sleep.png')
+awake = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\awake.png')
+teacher = pygame.image.load(r'C:\Users\cathe\OneDrive\Documents\COP3035\projectgame\teacher.png')
+
+run = True
+while run:
+    pygame.time.delay(100)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+
+    screen.fill(background)
+    # sleepy sprites
+    screen.blit(sleepy_guy, (300, 200))
+    screen.blit(sleepy, (400, 200))
+    screen.blit(awake, (500, 200))
+    screen.blit(teacher, (600, 200))
+
+    #game layout
+    pygame.draw.rect(screen, desk, (100, 25, 200, 50))
+    pygame.draw.rect(screen, desk, (100, 50, 50, 175))
+
+    pygame.draw.rect(screen, desk, (900, 75, 215, 215))
+
+    pygame.draw.rect(screen, desk, (225, 350, 400, 80))
+
+    pygame.draw.rect(screen, desk, (725, 575, 200, 50))
+    pygame.draw.rect(screen, desk, (800, 450, 50, 175))
+
+    # displaying
+    pygame.display.flip()
+    pygame.display.update()
+
+pygame.quit()

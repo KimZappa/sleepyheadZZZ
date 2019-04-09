@@ -45,6 +45,13 @@ def win():
     screen.blit(TextSurf, TextRect)
     pygame.display.update()
 
+def nextLevel():
+    largeText = pygame.font.SysFont("comicsansms", 115)
+    TextSurf, TextRect = text_objects("Time for level 2!", largeText)
+    TextRect.center = ((1200 / 2), (650 / 2))
+    screen.blit(TextSurf, TextRect)
+    pygame.display.update()
+
 def button(msg,x,y,w,h,ic,ac,action=None):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
@@ -187,7 +194,7 @@ def levelOne():
                 if event.key == pygame.K_x:  # Pressing the x Key will quit the game
                     run = False
             elif len(allSleepy_sprites_list) == 0:
-                win()
+                nextLevel()
                 pygame.time.wait(1200)
                 levelTwo()
 
@@ -424,6 +431,10 @@ def levelTwo():
         collideWithSleepy5 = pygame.sprite.collide_rect(player, sleepy_student5)
         if collideWithSleepy5 == True:
             allSleepy_sprites_list.remove(sleepy_student5)
+
+        collideWithSleepy6 = pygame.sprite.collide_rect(player, sleepy_student6)
+        if collideWithSleepy6 == True:
+            allSleepy_sprites_list.remove(sleepy_student6)
 
         allSleepy_sprites_list.update()
         allAwake_sprites_list.update()

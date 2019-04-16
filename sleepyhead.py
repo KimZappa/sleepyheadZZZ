@@ -240,6 +240,10 @@ def levelOne():
             if sleepy_student1 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student1)
+            awake8 = Awake(10, 10)
+            awake8.rect.x = 20
+            awake8.rect.y = 30
+            allAwake_sprites_list.add(awake8)
 
 
 
@@ -248,6 +252,10 @@ def levelOne():
             if sleepy_student2 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student2)
+            awake9 = Awake(10, 10)
+            awake9.rect.x = 150
+            awake9.rect.y = 300
+            allAwake_sprites_list.add(awake9)
 
 
         collideWithSleepy3 = pygame.sprite.collide_rect(player, sleepy_student3)
@@ -255,6 +263,12 @@ def levelOne():
             if sleepy_student3 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student3)
+            awake10 = Awake(10, 10)
+            awake10.rect.x = 800
+            awake10.rect.y = 350
+            allAwake_sprites_list.add(awake10)
+
+
 
 
         collideWithSleepy4 = pygame.sprite.collide_rect(player, sleepy_student4)
@@ -262,6 +276,10 @@ def levelOne():
             if sleepy_student4 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student4)
+            awake11 = Awake(10, 10)
+            awake11.rect.x = 810
+            awake11.rect.y = 100
+            allAwake_sprites_list.add(awake11)
 
 
         collideWithSleepy5 = pygame.sprite.collide_rect(player, sleepy_student5)
@@ -269,6 +287,10 @@ def levelOne():
             if sleepy_student5 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student5)
+            awake12 = Awake(10, 10)
+            awake12.rect.x = 150
+            awake12.rect.y = 30
+            allAwake_sprites_list.add(awake12)
 
 
         allSleepy_sprites_list.update()
@@ -446,6 +468,10 @@ def levelTwo():
             if sleepy_student1 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student1)
+            awake8 = Awake(10, 10)
+            awake8.rect.x = 20
+            awake8.rect.y = 30
+            allAwake_sprites_list.add(awake8)
 
 
         collideWithSleepy2 = pygame.sprite.collide_rect(player, sleepy_student2)
@@ -453,6 +479,10 @@ def levelTwo():
             if sleepy_student2 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student2)
+            awake9 = Awake(10, 10)
+            awake9.rect.x = 150
+            awake9.rect.y = 300
+            allAwake_sprites_list.add(awake9)
 
 
         collideWithSleepy3 = pygame.sprite.collide_rect(player, sleepy_student3)
@@ -460,6 +490,10 @@ def levelTwo():
             if sleepy_student3 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student3)
+            awake10 = Awake(10, 10)
+            awake10.rect.x = 800
+            awake10.rect.y = 350
+            allAwake_sprites_list.add(awake10)
 
 
         collideWithSleepy4 = pygame.sprite.collide_rect(player, sleepy_student4)
@@ -467,6 +501,10 @@ def levelTwo():
             if sleepy_student4 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student4)
+            awake11 = Awake(10, 10)
+            awake11.rect.x = 810
+            awake11.rect.y = 100
+            allAwake_sprites_list.add(awake11)
 
 
         collideWithSleepy5 = pygame.sprite.collide_rect(player, sleepy_student5)
@@ -474,6 +512,10 @@ def levelTwo():
             if sleepy_student5 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student5)
+            awake12 = Awake(10, 10)
+            awake12.rect.x = 150
+            awake12.rect.y = 30
+            allAwake_sprites_list.add(awake12)
 
 
         collideWithSleepy6 = pygame.sprite.collide_rect(player, sleepy_student6)
@@ -481,6 +523,10 @@ def levelTwo():
             if sleepy_student6 in allSleepy_sprites_list:
                 increment_score()
             allSleepy_sprites_list.remove(sleepy_student6)
+            awake13 = Awake(10, 10)
+            awake13.rect.x = 915
+            awake13.rect.y = 230
+            allAwake_sprites_list.add(awake13)
 
 
         allSleepy_sprites_list.update()

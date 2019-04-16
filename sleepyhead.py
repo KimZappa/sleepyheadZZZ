@@ -208,7 +208,7 @@ def levelOne():
                     run = False
             elif len(allSleepy_sprites_list) == 0:
                 nextLevel()
-                pygame.time.wait(1200)
+                pygame.time.wait(1800)
                 levelTwo()
 
         keys = pygame.key.get_pressed()
@@ -225,13 +225,13 @@ def levelOne():
         collideWithFirstTeacher = pygame.sprite.collide_rect(player,teacher)
         if collideWithFirstTeacher == True:
             crash()
-            pygame.time.wait(1200)
+            pygame.time.wait(1800)
             run = False
         # if player collides with a teacher game ends
         collideWithSecondTeacher = pygame.sprite.collide_rect(player, teacher2)
         if collideWithSecondTeacher == True:
             crash()
-            pygame.time.wait(1200)
+            pygame.time.wait(1800)
             run = False
 
          # if player colides with sleeping student remove it from screen
@@ -431,7 +431,7 @@ def levelTwo():
                     run = False
             elif len(allSleepy_sprites_list) == 0:
                 win()
-                pygame.time.wait(1200)
+                pygame.time.wait(1800)
                 gameMenu()
 
         keys = pygame.key.get_pressed()
@@ -448,18 +448,18 @@ def levelTwo():
         collideWithFirstTeacher = pygame.sprite.collide_rect(player, teacher)
         if collideWithFirstTeacher == True:
             crash()
-            pygame.time.wait(1200)
+            pygame.time.wait(1800)
             gameMenu()
         # if player collides with a teacher game ends
         collideWithSecondTeacher = pygame.sprite.collide_rect(player, teacher2)
         if collideWithSecondTeacher == True:
             crash()
-            pygame.time.wait(1200)
+            pygame.time.wait(1800)
             gameMenu()
         collideWithThirdTeacher = pygame.sprite.collide_rect(player, teacher3)
         if collideWithThirdTeacher == True:
             crash()
-            pygame.time.wait(1200)
+            pygame.time.wait(1800)
             gameMenu()
 
         # if player collides with sleeping student remove it from screen
